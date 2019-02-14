@@ -1,1 +1,1 @@
-Site for news using JS stacks
+News site using JS stacks
