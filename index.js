@@ -1,6 +1,8 @@
 function displayText() {
     console.log('displaying text...')
 }
+
+let root = document.getElementById('root');
 articles.forEach(article => {
-    document.getElementById('root').innerHTML += (`<div onclick="displayText()">${article.title}</div>`)
+    root.innerHTML += `<div onclick="displayText()">${article.title}</div>`;
 });
