@@ -15,3 +15,4 @@ const articles = [
 		and other privacy disputes violated a 2011 agreement with the FTC to safeguard user privacy. Facebook reportedly 
 		faces the highest-ever fine imposed by FTC on a technology firm.`}
 	]
+const { id1, id2, id3 } = articles;
