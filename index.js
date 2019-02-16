@@ -5,9 +5,7 @@ function displayText(id) {
     textContainer.innerHTML = article.text;
 };
 
-
 let root = document.getElementById('root');
 articles.forEach(article => {
-    root.innerHTML += `<div onclick="displayText(${article.id})">${article.title}</div>`;
+    root.innerHTML += `<p onclick="displayText(${article.id})"><i>${article.title}</i></p>`;
 });
-
