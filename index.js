@@ -1,11 +1,21 @@
 let textContainer = document.getElementById('text-container');
 function displayText(id) {
-    console.log('displaying text...')
-    const article = articles.filter(a => a.id == id)[0];
-    textContainer.innerHTML = article.text;
+    findArticle(a => a.id == id, found => textContainer.innerHTML = found.text);
 };
 
 let root = document.getElementById('root');
-articles.forEach(article => {
-    root.innerHTML += `<p onclick="displayText(${article.id})"><i>${article.title}</i></p>`;
-});
+getArticles(artcls => {
+    artcls.forEach(a => {
+        root.innerHTML += `<p onclick="displayText(${a.id})"><i>${a.title}</i></p>`;
+    });
+})
+
+function getArticles(callback) {
+    db.allDocs({ include_docs: true, descending: true }, (err, doc) => {
+        callback(doc.rows.map(r => r.doc));
+    }); 
+}
+
+function findArticle(condition, callback) {
+    getArticles(artcls => { callback(artcls.filter(condition)[0]); });
+}
