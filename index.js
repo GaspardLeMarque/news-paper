@@ -7,5 +7,5 @@ function displayText(id) {
 
 let root = document.getElementById('root');
 articles.forEach(article => {
-    root.innerHTML += `<p onclick="displayText(${article.id})"><i>${article.title}</i></p>`;
+    root.innerHTML += `<p onclick="displayText(${article.id})">${article.title}</p>`;
 });
