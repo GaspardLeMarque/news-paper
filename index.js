@@ -4,11 +4,13 @@ function displayText(id) {
 };
 
 let root = document.getElementById('root');
-getArticles(artcls => {
+getArticles(fillTitles)
+
+function fillTitles(artcls) {
     artcls.forEach(a => {
         root.innerHTML += `<p onclick="displayText(${a.id})"><i>${a.title}</i></p>`;
-    });
-})
+    })
+}
 
 function getArticles(callback) {
     db.allDocs({ include_docs: true, descending: true }, (err, doc) => {
