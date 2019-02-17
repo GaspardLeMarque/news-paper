@@ -1,0 +1,18 @@
+#date {
+    text-align: right;
+}
+body {
+    background-color: #f0ffff; 
+};
+#root {
+    font-style: italic;
+    font-size: 16pt;
+};
+#text-container {
+    font-style: normal;
+    font-size: 12pt;
+    color: red;
+    text-align: left;
+    margin: 20px;
+    padding: 40px;
+};
