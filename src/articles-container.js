@@ -1,4 +1,4 @@
-const articles = [{
+export const articles = [{
 		id: 1,
 		date: `15 Feb 2019`,
 		title: 'India withdraws Most Favoured Nation status to Pak',
