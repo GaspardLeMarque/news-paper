@@ -9,6 +9,14 @@ body {
     text-align: center;
     padding-top: 3%;
 }
+#nav input[type=text] {
+    float: right;
+    margin-top: 5%;
+    border: none;
+    margin-right: 15%;
+    font-family: 'Segoe UI';
+    font-size: 14pt;
+  }
 #root {
     font-style: italic;
     font-size: 14pt;
