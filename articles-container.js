@@ -1,4 +1,4 @@
-export const articles = [{
+const articles = [{
 		id: 1,
 		date: `15 Feb 2019`,
 		title: 'India withdraws Most Favoured Nation status to Pak',
@@ -26,3 +26,4 @@ export const articles = [{
 		faces the highest-ever fine imposed by FTC on a technology firm.`
 	}
 ]
+module.exports = articles;

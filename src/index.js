@@ -15,3 +15,16 @@ articles.forEach(article => {
     p.innerHTML = article.title;
     root.appendChild(p);
 });
+//Changed
+let root = document.getElementById('root');
+
+displayTitles(articles)
+
+function displayTitles(artcls) {
+    artcls.forEach(article => {
+        var p = document.createElement("p");
+        p.onclick = () => displayText(article.id);
+        p.innerHTML = article.title;
+        root.appendChild(p);
+    });
+}
