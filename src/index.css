@@ -59,7 +59,7 @@ body {
     height: 40px;
 }
 
-#root {
+#titles-container {
     font-style: italic;
     font-size: 14pt;
     font-family: 'Segoe UI';

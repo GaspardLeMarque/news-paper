@@ -1,6 +1,4 @@
-<head>
-    <link rel="stylesheet" type="text/css" href="./src/index.css">
-</head>
+export const html = `
 <title>news paper</title>
 <h1 id="main-heading">news paper</h1>
 <div class="header">
@@ -11,21 +9,10 @@
     </div>  
     <div class="navbar">
         <span>
-            <input type="text" placeholder="Search what was lost..."></input> 
+            <input type="text" placeholder="Search what was lost...">
         </span>
         <span>
             <button type="submit" id="nav-search-button">Search</button>
         </span>  
     </div>   
-</div>  
-
-
-<p id="root">
-
-</p>
-
-
-<p id="text-container">
-</p>
-
-<script src="./dist/main.js"></script>
+</div>`;
