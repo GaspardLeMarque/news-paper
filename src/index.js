@@ -12,15 +12,23 @@ root.innerHTML = require('./page.html').html;
 root.appendChild(titlesContainer);
 root.appendChild(textContainer);
 
-let articles = [
-    {id:0,title:'example title',text:'example text'}
-];
-displayTitles(articles)
+let articles;
+//displayTitles(articles)
+
+
+console.log(articles)
+fetch('http://localhost:3000/articles')
+  .then(response => response.json())
+  .then(data => { 
+    displayTitles(data);
+    articles=data;
+})
+
 
 
 //#region functions
 
-function displayTitles(artcls) {
+function displayTitles(artcls) {  
     artcls.forEach(article => {
         var p = document.createElement("p");
         p.onclick = () => displayText(article.id);
@@ -36,3 +44,4 @@ function displayText(id) {
 };
 
 //#endregion
+
