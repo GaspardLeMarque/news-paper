@@ -13,16 +13,34 @@ body {
 }
 .header {
     background-color: #f0ffff;
+    position: absolute top;
 }
-.navbar input[type=text] {
+.search {
+    width: 100%;
     position: relative;
+    display: inline-block;
+}
+#search-bar {
     height: 40px;
-    width: calc(100% - 80px);
+    width: 90%;
+    border: 3px solid #ff7f50;
     margin-top: 0%;
-    border: none;
-    margin-right: 7%;
     font-family: 'Segoe UI';
     font-size: 14pt;
+}
+#search-button {
+    position: absolute;
+    font-family: 'Segoe UI';
+    font-size: 14pt;
+    letter-spacing: 0.7pt;
+    line-height: 1.8;
+    border-radius: 0;
+    color: black;
+    background-color: #ff7f50;
+    text-shadow: -1px 1px #ff6450;
+    border: 1px solid #ff7f50;
+    width: 10%;
+    height: 48px;
 }
 .topnav a:hover {
     background-color: #f0ffff;
@@ -34,31 +52,13 @@ body {
     color: black;
     float: left;
     padding: 10px 5px;
-    padding-left: 30;
-    padding-right: 30;
+    padding-left: 50px;
+    padding-right: 50px;
     text-decoration: none;
     font-family: 'Segoe UI';
     font-size: 14pt;
-}
-#nav-search-button {
-    position: relative;
-    display: inline-block;
-    left: 80px;
-    font-family: 'Segoe UI';
-    font-size: 14pt;
     letter-spacing: 0.5pt;
-    line-height: 1.8;
-    appearance: none;
-    box-shadow: none;
-    border-radius: 0;
-    color: black;
-    background-color: #ff7f50;
-    text-shadow: -1px 1px #ff6450;
-    border: none;
-    width: 80px;
-    height: 40px;
 }
-
 #titles-container {
     font-style: italic;
     font-size: 14pt;
@@ -67,6 +67,7 @@ body {
     vertical-align: top;
     margin-left: 10%;
     margin-top: 5%;
+    width: 50%;
 }
 #text-container {
     font-style: normal;
@@ -74,11 +75,10 @@ body {
     font-size: 12pt;
     text-align: center;
     white-space: normal;
-    float: right;
+    width: 50%;
     margin-top: 5%;
     margin-right: 10%;
     width: 400px;
-    display: block;
-    margin: 0;
+    display: inline-block;
     word-spacing: 5px;
 }

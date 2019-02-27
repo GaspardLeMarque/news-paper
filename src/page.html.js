@@ -6,12 +6,12 @@ export const html = `
         <a href="#Tech">Tech</a>
         <a href="#Fun and Games">Fun&Games</a>
     </div>  
-    <div class="navbar">
+    <div class="search">
         <span>
-            <input type="text" placeholder="Search what was lost...">
+            <input type="text" id="search-bar" placeholder="Search what was lost..."/>
         </span>
         <span>
-            <button type="submit" id="nav-search-button">Search</button>
+            <button type="submit" id="search-button">Search</button>
         </span>  
     </div>   
 </div>`;
