@@ -8,7 +8,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebPackPlugin({}),
+        new HtmlWebPackPlugin({title: 'News paper'}),
         new HtmlWebPackRootPlugin({}),
     ]
 };

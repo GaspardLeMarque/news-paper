@@ -1,5 +1,4 @@
 export const html = `
-<title>news paper</title>
 <h1 id="main-heading">news paper</h1>
 <div class="header">
     <div class="topnav">
