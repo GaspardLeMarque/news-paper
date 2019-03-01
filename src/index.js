@@ -25,6 +25,16 @@ fetch('http://localhost:3000/articles')
 })
 
 
+let apiArticles;
+
+fetch('https://newsapi.org/v2/top-headlines?country=se&pageSize=3&apiKey=959015783e8f49b888ae47b83bd191f0')
+    .then(apiResponse => apiResponse.json())
+    .then(apiArray => {
+        apiArticles=apiArray.articles;
+        console.log(apiArticles)
+    })
+
+
 
 //#region functions
 
