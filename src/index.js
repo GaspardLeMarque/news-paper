@@ -30,9 +30,14 @@ let apiArticles;
 fetch('https://newsapi.org/v2/top-headlines?country=se&pageSize=3&apiKey=959015783e8f49b888ae47b83bd191f0')
     .then(apiResponse => apiResponse.json())
     .then(apiArray => {
-        apiArticles=apiArray.articles;
-        console.log(apiArticles)
-    })
+        let i = 4;
+        apiArticles=apiArray.articles.map(a => {
+            return {id: i++, title: a.title, text: a.content}})
+        displayTitles(apiArticles);
+        articles = articles.concat(apiArticles)
+        console.log(articles)
+    })  
+
 
 
 
