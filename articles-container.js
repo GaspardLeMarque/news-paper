@@ -1,6 +1,6 @@
 const articles = [{
 		id: 1,
-		date: `15 Feb 2019`,
+		published_date: new Date(Date.UTC(2019, 1,15)),
 		title: 'India withdraws Most Favoured Nation status to Pak',
 		text: `Following the attack in Jammu & Kashmir's Pulwama that left 44 CRPF personnel dead, 
 		India has withdrawn the MFN (Most Favoured Nation) status that it had granted to Pakistan. The decision was taken 
@@ -9,7 +9,7 @@ const articles = [{
 	},
 	{
 		id: 2,
-		date: `15 Feb 2019`,
+		published_date: new Date(Date.UTC(2019, 1,15)),
 		title: 'UK PM Theresa May loses vote on her Brexit strategy',
 		text: `British Prime Minister Theresa May on Thursday lost the Parliament vote by 303 to 258 on her negotiating 
 		strategy to exit the European Union (EU). The pro-Brexit European Research Group of Conservative MPs announced 
@@ -18,7 +18,7 @@ const articles = [{
 	},
 	{
 		id: 3,
-		date: `15 Feb 2019`,
+		published_date: new Date(Date.UTC(2019, 1,15)),
 		title: 'Facebook and US government negotiating multi-billion-dollar fine',
 		text: `Facebook is negotiating a multi-billion-dollar fine to settle an investigation of the US Federal Trade 
 	 	Commission (FTC), the Washington Post reported. The probe focused on whether data sharing with Cambridge Analytica 
