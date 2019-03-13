@@ -1,4 +1,7 @@
-import './index.css';
+//import './index.css';
+require('bootstrap');
+require('bootstrap/dist/css/bootstrap.css');
+import './custom.css';
 
 let root = document.getElementById('root');
 
@@ -9,8 +12,11 @@ let textContainer = document.createElement('p');
 textContainer.id = 'text-container';
 
 root.innerHTML = require('./page.html').html;
-root.appendChild(titlesContainer);
-root.appendChild(textContainer);
+//root.appendChild(titlesContainer);
+//root.appendChild(textContainer);
+console.log(root.getElementsByClassName('Content'));
+document.getElementById('Titles').appendChild(titlesContainer);
+document.getElementById('Content').appendChild(textContainer);
 
 let articles;
 //displayTitles(articles)
@@ -37,7 +43,6 @@ fetch('https://newsapi.org/v2/top-headlines?country=se&pageSize=3&apiKey=9590157
         articles = articles.concat(apiArticles)
         console.log(articles)
     })  
-
 
 
 
