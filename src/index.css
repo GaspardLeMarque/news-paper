@@ -1,73 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
 
 body {
-    margin: 0;
-    background-color: #f0ffff; 
+    background-color: #f0ffff !important; 
 }
-#main-heading {
+h1 {
     font-family: 'Shrikhand', cursive; 
     font-size: 30pt;
-    text-align: center;
-    margin-top: 0%;
-    position: absolute top;
 }
-.header {
-    background-color: #f0ffff;
-    position: absolute top;
-}
-.search {
-    width: 100%;
-    position: relative;
-    display: inline-block;
-}
-#search-bar {
-    height: 40px;
-    width: 90%;
-    border: 3px solid #ff7f50;
-    margin-top: 0%;
-    font-family: 'Segoe UI';
+.justify-content-md-center {
     font-size: 14pt;
-}
-#search-button {
-    position: absolute;
     font-family: 'Segoe UI';
-    font-size: 14pt;
-    letter-spacing: 0.7pt;
-    line-height: 1.8;
-    border-radius: 0;
-    color: black;
-    background-color: #ff7f50;
-    text-shadow: -1px 1px #ff6450;
-    border: 1px solid #ff7f50;
-    width: 10%;
-    height: 48px;
-}
-.topnav a:hover {
-    background-color: #f0ffff;
-    color: red;
-}
-.topnav a {
-    display: block;
-    position: relative;
-    color: black;
-    float: left;
-    padding: 10px 5px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-decoration: none;
-    font-family: 'Segoe UI';
-    font-size: 14pt;
-    letter-spacing: 0.5pt;
 }
 #titles-container {
     font-style: italic;
-    font-size: 14pt;
+    font-size: 13pt;
     font-family: 'Segoe UI';
     display: inline-block;
     vertical-align: top;
     margin-left: 10%;
     margin-top: 5%;
     width: 50%;
+    cursor:pointer;
 }
 #text-container {
     font-style: normal;
