@@ -1,4 +1,5 @@
 import './index.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 import ReactDOM from 'react-dom';
 import React from 'react'
