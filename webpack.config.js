@@ -4,7 +4,24 @@ const HtmlWebPackRootPlugin = require("html-webpack-root-plugin");
 module.exports = {
     module: {
         rules: [
-            { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+            { test: /\.scss/,
+                use: [
+                    { loader: 'isomorphic-style-loader' },
+                    {
+                      loader: 'css-loader',
+                      options: {
+                        camelCase: true,
+                        modules: true
+                      }
+                    },
+                    { loader: 'sass-loader',
+                      options: {
+                        sourceMap: true,
+                        outputStyle: 'expanded'
+                      }
+                    },
+                  ]
+                  },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
